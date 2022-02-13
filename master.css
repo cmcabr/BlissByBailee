@@ -276,7 +276,7 @@ footer {
 .container {
   position: relative;
   width: 40%;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .mySlides {
@@ -319,7 +319,7 @@ footer {
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;

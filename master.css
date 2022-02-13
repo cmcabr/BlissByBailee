@@ -1,0 +1,352 @@
+ *{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  background: rgba(255, 249, 218, 0.801) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: 'Honey Florist';
+  src="images/Honey Florist-Personal Use.otf";
+}
+
+
+.banner {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+width: 90px;
+cursor: pointer;
+}
+
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+/* change color for top nav bar*/
+.navbar ul li a{
+  text-decoration: none;
+  color: rgb(15, 8, 8);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: fangsong;
+  font-style: italic;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 5px;
+  width: 0;
+  background: #4af108;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after{
+  width: 100%;
+}
+
+.content {
+  color: rgb(56, 150, 13);
+  text-align:center;
+  font-size: 22px;
+  width: 85%;
+  margin: auto;
+}
+
+.content h1{
+  font-family: fangsong;
+  font-style: italic;
+	font-size: 70px;
+	// margin-top: 200px;
+  color: #15c915
+}
+
+.content h2{
+  font-family: fangsong;
+  font-style: italic;
+  font-size: 30px;
+	margin:20px auto;
+	font-weight: bold;
+	line-height: 25px;
+  color: #15c915 ;
+}
+
+.content h3{
+  padding:30px;
+  font-size: 15px;
+}
+
+button{
+  width: 400px;
+  padding: 15px ;
+  text-align: center;
+  margin: 30px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 2px solid lightgreen; /*can be changed to different color*/
+  background-color:rgb(255, 255, 247);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span{
+  width: 100%;
+}
+
+button:hover{
+  border: none;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  height: auto;
+  width: 100pw;
+  font-family: "fangsong";
+  // padding-top: 40px;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #15c915 ;
+  font-size: 25px ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  font-style: sans-serif;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: fangsong;
+}
+
+.footer-content h4{
+ font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  font-family: fangsong;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: black;
+}
+
+.socials a i{
+  font-size: 2rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: #15c915;
+}
+
+.table {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+} 
+
+.content-table{
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 22px;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-table thead tr {
+  background-color: white;
+  color: black;
+  text-align: center;
+}
+
+.content-table th, .content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr{
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type{
+  border-bottom: 2px solid white;
+}
+
+#main{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 35%;
+}
+
+.imaging {
+  width: 10%;
+  border-radius: 8px;
+}
+
+.planlog{
+  align-content: left;
+}
+
+.container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

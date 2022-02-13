@@ -339,6 +339,7 @@ footer {
 
 .column {
   float: left;
+  width: 10%;
 }
 
 .demo {

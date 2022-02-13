@@ -275,7 +275,7 @@ footer {
 .container {
   position: relative;
   width: 40%;
-  /* margin: auto; */
+  margin: auto;
 }
 
 .mySlides {

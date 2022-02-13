@@ -1,4 +1,4 @@
- *{
+*{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -146,7 +146,7 @@ footer {
   height: auto;
   width: 100pw;
   font-family: "fangsong";
-  /* padding-top: 40px; */
+  // padding-top: 40px;
 }
 
 .footer-content{
@@ -279,9 +279,9 @@ footer {
   margin: auto;
 }
 
-/* .mySlides {
-//  display: none;
-*/}
+.mySlides {
+  display: none;
+}
 
 .cursor {
   cursor: pointer;

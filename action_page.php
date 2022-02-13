@@ -8,4 +8,5 @@
 				 'X-Mailer: PHP/' . phpversion();
 
 		    mail($to, $subject, $message, $headers);
-		?>
+	header('Location: confirmation.html');
+?>

@@ -33,7 +33,7 @@
 				<p>Please fill in this form to sign up for the Teen Entrepreneurship Webinar</p>
 				<hr>
 				<label for="email"><b>Email</b></label>
-				<input type="text" placeholder="Enter Email" name="email" required id="email">
+				<input type="text" placeholder="Enter Email" name="email" required>
 
 				<label for="psw"><b>Password</b></label>
 		 		<input type="password" placeholder="Enter Password" name="psw" required>
@@ -51,6 +51,17 @@
 				</div>
 			</div>
 		</form>
+		 <?php
+		    $email = $_GET("email");
+		    $to      = email;
+		    $subject = 'Teen Entrepreneurship Webinar - Confirmation';
+		    $message = 'You're all set! \n \n You are signed up for the Teen Entrepreneurship Webinar. We will send you a proper ZOOM code when the deadline comes up.';
+		    $headers = 'From: BlissByBailee'       . "\r\n" .
+				 'Reply-To: ' + email + . "\r\n" .
+				 'X-Mailer: PHP/' . phpversion();
+
+		    mail($to, $subject, $message, $headers);
+		?>
 	</div>
           
         </div>

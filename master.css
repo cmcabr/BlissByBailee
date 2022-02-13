@@ -83,7 +83,8 @@ cursor: pointer;
 .content h1{
   font-family: fangsong;
   font-style: italic;
-  font-size: 70px;
+	font-size: 70px;
+	// margin-top: 200px;
   color: #15c915
 }
 
@@ -318,7 +319,7 @@ footer {
 }
 
 .numbertext {
-  color: #000000;
+  color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
